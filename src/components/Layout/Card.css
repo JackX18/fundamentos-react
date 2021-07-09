@@ -1,11 +1,15 @@
 .Card {
     background-color: red;
+    border: 3px solid red;
     border-radius: 10px ;
     overflow: hidden;
-    border: 3px solid red;
     margin: 10px;
-    justify-content: space-arround;
-    flex-direction: row;
+
+
+    display: flex;  /* FlexBox */
+    flex-direction: column; /* FlexBox */
+    min-width: 300px; /* FlexBox */
+    max-width: 300px; /* FlexBox */
 }
 
 .Card .Title {
@@ -18,4 +22,7 @@
     background-color: green;
     color: black;
     padding: 10px;
+
+    
+    flex-grow: 1; /* FlexBox */
 }
