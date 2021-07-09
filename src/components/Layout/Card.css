@@ -1,6 +1,5 @@
 .Card {
-    background-color: red;
-    border: 3px solid red;
+    border: 3px solid;
     border-radius: 10px ;
     overflow: hidden;
     margin: 10px;
@@ -8,8 +7,8 @@
 
     display: flex;  /* FlexBox */
     flex-direction: column; /* FlexBox */
-    min-width: 300px; /* FlexBox */
-    max-width: 300px; /* FlexBox */
+    min-width: 500px; /* FlexBox */
+    max-width: 500px; /* FlexBox */
 }
 
 .Card .Title {
@@ -19,10 +18,10 @@
 }
 
 .Card .Content {
-    background-color: green;
+    background-color: #ccc;
     color: black;
     padding: 10px;
 
-    
+
     flex-grow: 1; /* FlexBox */
 }
