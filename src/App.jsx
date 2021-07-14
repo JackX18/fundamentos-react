@@ -5,6 +5,7 @@ import Primeiro from './components/basicos/Primeiro';
 import ComParametro from './components/basicos/ComParametro';
 import Fragmento from './components/basicos/Fragmento';
 import { Familia } from './components/basicos/Familia';
+import { FamiliaMembro } from './components/basicos/FamiliaMembro';
 
 import { Card } from './components/Layout/Card';
 
@@ -18,7 +19,11 @@ export default (props) => {
             <div className="Cards">
                 {/* Propriedades Filhos */}
                 <Card titulo="#05 - Componente com Filhos" color="#00C8F8">
-                    <Familia sobrenome="Ferreira"/>
+                    <Familia sobrenome="Ferreira">
+                        <FamiliaMembro nome="Pedro" sobrenome={props.sobrenome} />
+                        <FamiliaMembro nome="Ana" {...props} />
+                        <FamiliaMembro nome="Gustavo" sobrenome="Silva" />
+                    </Familia>
                 </Card>
 
                 <Card titulo="#04 - Desafio Aleatorio" color="#FA6900">
